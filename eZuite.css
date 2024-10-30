@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo{
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.home-icon, .admin-icon, .bell-icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.home-icon:not([src]), .admin-icon:not([src]), .bell-icon:not([src]) {
+    display: none;
+}
+
+
+.user-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.user-menu span{
+    margin-right: 10px;
+}
+
+
+.add-button{
+    background-color: white;
+    color: #2196f3;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.user-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1em;
+    margin-right: 10px;
+    
+}
+
+.sidebar{
+    width: 180px;
+    background-color: #082d72;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    font-size: 0.7rem;
+
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #444;
+}
+
+
+
+.sidebar-icon {
+    width: 18px;  /* Adjust the size of the icon */
+    height: 18px;
+    margin-bottom: 2px; /* Space between icon and text */
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.filter-bar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.filter-bar button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.filter-bar input{
+    padding: 10px;
+    width: 200px;
+    margin-left: auto;
+}
+
+.user-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td{
+    padding: 10px;
+    border: 1px solid#ddd;
+}
+
+.user-table th{
+    background-color: #f1f1f1;
+}
+
+.user-table tr:nth-child(even){
+    background-color: #f9f9f9;
+}
